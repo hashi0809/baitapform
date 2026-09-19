@@ -183,13 +183,13 @@ form {
   cursor: pointer;
 }
 
-/* Radio */
+/* Radio: mặc định viền xám nhạt */
 .radio-grid input[type="radio"] {
   appearance: none;
   -webkit-appearance: none;
-  width: 16px;
-  height: 16px;
-  border: 1px solid #aaa;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #aaa; /* Viền xám nhạt khi CHƯA chọn */
   border-radius: 50%;
   background-color: #fff;
   display: inline-flex;
@@ -199,18 +199,19 @@ form {
   position: relative;
   margin: 0;
   flex-shrink: 0;
+  box-sizing: border-box;
 }
 
+/* Chỉ khi ĐƯỢC CHỌN: viền xanh dày + chấm xanh */
 .radio-grid input[type="radio"]:checked {
-  border-color: #00b300;
-  box-shadow: 0 0 0 3px rgba(0, 179, 0, 0.3);
+  border: 3px solid #2e8b2e; /* Viền xanh dày khi được chọn */
 }
 
 .radio-grid input[type="radio"]:checked::after {
   content: "";
   width: 8px;
   height: 8px;
-  background-color: #00b300;
+  background-color: #2e8b2e; /* Chấm xanh ở tâm */
   border-radius: 50%;
   display: block;
 }
