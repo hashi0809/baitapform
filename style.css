@@ -1,0 +1,277 @@
+/* ===== RESET & CƠ BẢN ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background-color: #99ccff;
+  width: 750px;
+  padding: 20px 70px 30px 70px;
+}
+
+/* ===== LOGO ===== */
+.logo {
+  width: 310px;
+  margin: 0 auto 30px auto;
+  border: 2px solid #000;
+  border-radius: 15px;
+  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  text-align: center;
+  background-color: #00ffff;
+}
+
+.logo-top {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0px 0;
+  border-bottom: 5px solid #000;
+}
+
+.logo-bottom {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0px 0;
+}
+
+/* ===== TIÊU ĐỀ ===== */
+h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 22px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+
+/* ===== FORM ===== */
+form {
+  font-size: 17px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-row.align-top {
+  align-items: flex-start;
+}
+
+.row-name .input-col {
+  margin-right: 0px;
+}
+.row-name .label-lastname {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.row-addr1 {
+  margin-bottom: 7px;
+}
+
+.row-addr2 {
+  margin-top: 0;
+  margin-bottom: 7px;
+}
+
+.label-col {
+  width: 220px;
+  font-weight: normal;
+  flex-shrink: 0;
+  padding-top: 3px;
+}
+
+.label-inline {
+  white-space: nowrap;
+  margin-right: 2px;
+}
+
+/* State: margin-left 0px (sát lề) */
+.label-state {
+  margin-left: 0px;
+}
+
+/* Zip: margin-left 2px */
+.label-zip {
+  margin-left: 2px;
+}
+
+.input-col {
+  flex-shrink: 0;
+}
+
+/* ----- INPUT TEXT & SELECT ----- */
+.input-col input[type="text"],
+.input-col select {
+  width: 150px;
+  height: 26px;
+  padding: 2px 4px;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  font-family: inherit;
+  font-size: 16px;
+}
+.input-col.name-col input[type="text"] {
+  width: 120px;
+}
+
+.input-col.wide input[type="text"] {
+  width: 220px;
+}
+
+.input-col.small input[type="text"] {
+  width: 50px;
+}
+
+.input-col.country-col input[type="text"] {
+  width: 150px;
+}
+
+.input-col.zip-col input[type="text"] {
+  width: 90px;
+}
+
+.input-col select {
+  width: 130px;
+  height: 28px;
+}
+.input-col.date-col input[type="text"] {
+  width: 170px;
+}
+
+/* ----- TEXTAREA ----- */
+.textarea-col textarea {
+  width: 390px;
+  padding: 4px;
+  border: 1px solid #aaa;
+  font-family: inherit;
+  font-size: 16px;
+  resize: none;
+}
+
+/* ===== RADIO & CHECKBOX ===== */
+.radio-grid,
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: 150px 220px;
+  gap: 2px 10px;
+}
+
+.radio-grid label,
+.checkbox-grid label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Radio */
+.radio-grid input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.radio-grid input[type="radio"]:checked {
+  border-color: #00b300;
+  box-shadow: 0 0 0 3px rgba(0, 179, 0, 0.3);
+}
+
+.radio-grid input[type="radio"]:checked::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #00b300;
+  border-radius: 50%;
+  display: block;
+}
+
+/* Checkbox */
+.checkbox-grid input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.checkbox-grid input[type="checkbox"]:checked {
+  background-color: #0066cc;
+  border-color: #0066cc;
+}
+
+.checkbox-grid input[type="checkbox"]:checked::after {
+  content: "";
+  width: 4px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  margin-bottom: 2px;
+  display: block;
+}
+/* ===== ĐƯỜNG KẺ NGANG ===== */
+.divider {
+  border: none;
+  border-top: 2px solid #000;
+  margin: 18px 0;
+}
+
+/* ===== NÚT BẤM ===== */
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.button-row button {
+  font-family: inherit;
+  font-size: 16px;
+  padding: 5px 18px;
+  background-color: #e0e0e0;
+  border: 2px outset #ccc;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button-row button:active {
+  border-style: inset;
+}

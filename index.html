@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập web - Nhập thông tin</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <div class="logo-top">Jackson</div>
+        <div class="logo-bottom">Electronics</div>
+      </div>
+
+      <!-- Tiêu đề -->
+      <h1>Registration Form</h1>
+      <p class="subtitle">Register your Jackson Electronics product here</p>
+
+      <form action="#" method="post">
+        <!-- PHẦN 1: THÔNG TIN CÁ NHÂN -->
+        <div class="form-row row-name">
+          <label class="label-col" for="firstName">First Name:</label>
+          <div class="input-col name-col">
+            <input type="text" id="firstName" name="firstName" />
+          </div>
+          <label class="label-inline label-lastname" for="lastName"
+            >Last Name:</label
+          >
+          <div class="input-col name-col">
+            <input type="text" id="lastName" name="lastName" />
+          </div>
+        </div>
+
+        <div class="form-row row-addr1">
+          <label class="label-col" for="address1">Address #1:</label>
+          <div class="input-col wide">
+            <input type="text" id="address1" name="address1" />
+          </div>
+        </div>
+
+        <div class="form-row row-addr2">
+          <label class="label-col" for="address2">Address #2:</label>
+          <div class="input-col wide">
+            <input type="text" id="address2" name="address2" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label class="label-col" for="city">City:</label>
+          <div class="input-col country-col">
+            <input type="text" id="city" name="city" />
+          </div>
+          <label class="label-inline label-state" for="state">State:</label>
+          <div class="input-col small">
+            <input type="text" id="state" name="state" />
+          </div>
+          <label class="label-inline label-zip" for="zip">Zip:</label>
+          <div class="input-col zip-col">
+            <input type="text" id="zip" name="zip" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label class="label-col" for="country">Country:</label>
+          <div class="input-col country-col">
+            <input
+              type="text"
+              id="country"
+              name="country"
+              value="United States"
+            />
+          </div>
+        </div>
+
+        <!-- ĐƯỜNG KẺ NGANG 1 -->
+        <hr class="divider" />
+
+        <!-- PHẦN 2: THÔNG TIN SẢN PHẨM -->
+        <div class="form-row">
+          <label class="label-col" for="product">Product:</label>
+          <div class="input-col">
+            <select id="product" name="product">
+              <option value="ScanMaster">ScanMaster</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label class="label-col" for="datePurchased">Date Purchased:</label>
+          <div class="input-col date-col">
+            <input type="text" id="datePurchased" name="datePurchased" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label class="label-col" for="serial">Serial #:</label>
+          <div class="input-col date-col">
+            <input type="text" id="serial" name="serial" />
+          </div>
+        </div>
+
+        <!-- Used for -->
+        <div class="form-row align-top">
+          <label class="label-col">Used for:</label>
+          <div class="radio-grid">
+            <label
+              ><input type="radio" name="usedFor" value="Home" /> Home</label
+            >
+            <label
+              ><input type="radio" name="usedFor" value="Educational" />
+              Educational Institution</label
+            >
+            <label
+              ><input type="radio" name="usedFor" value="Business" />
+              Business</label
+            >
+            <label
+              ><input type="radio" name="usedFor" value="Other" checked />
+              Other</label
+            >
+            <label
+              ><input type="radio" name="usedFor" value="Government" />
+              Government</label
+            >
+          </div>
+        </div>
+
+        <!-- System -->
+        <div class="form-row align-top">
+          <label class="label-col">System (check all that apply):</label>
+          <div class="checkbox-grid">
+            <label
+              ><input type="checkbox" name="system" value="Windows" />
+              Windows</label
+            >
+            <label
+              ><input type="checkbox" name="system" value="UNIX" checked />
+              UNIX</label
+            >
+            <label
+              ><input type="checkbox" name="system" value="Macintosh" />
+              Macintosh</label
+            >
+            <label
+              ><input type="checkbox" name="system" value="Other" />
+              Other</label
+            >
+          </div>
+        </div>
+
+        <!-- ĐƯỜNG KẺ NGANG 2 -->
+        <hr class="divider" />
+
+        <!-- PHẦN 3: COMMENTS -->
+        <div class="form-row align-top">
+          <label class="label-col" for="comments">Comments?:</label>
+          <div class="input-col textarea-col">
+            <textarea id="comments" name="comments" rows="6"></textarea>
+          </div>
+        </div>
+
+        <!-- Nút bấm -->
+        <div class="button-row">
+          <button type="submit">Click to register</button>
+          <button type="reset">Click to cancel</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
