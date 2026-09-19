@@ -1,4 +1,3 @@
-/* ===== RESET & CƠ BẢN ===== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,11 +14,10 @@ body {
 
 .container {
   background-color: #99ccff;
-  width: 750px;
-  padding: 20px 70px 30px 70px;
+  width: 800px;
+  padding: 20px 70px 10px 70px;
 }
 
-/* ===== LOGO ===== */
 .logo {
   width: 310px;
   margin: 0 auto 30px auto;
@@ -44,7 +42,6 @@ body {
   padding: 0px 0;
 }
 
-/* ===== TIÊU ĐỀ ===== */
 h1 {
   text-align: center;
   font-size: 30px;
@@ -59,7 +56,6 @@ h1 {
   margin-bottom: 7px;
 }
 
-/* ===== FORM ===== */
 form {
   font-size: 17px;
 }
@@ -77,6 +73,7 @@ form {
 .row-name .input-col {
   margin-right: 0px;
 }
+
 .row-name .label-lastname {
   margin-left: 2px;
   margin-right: 2px;
@@ -103,12 +100,10 @@ form {
   margin-right: 2px;
 }
 
-/* State: margin-left 0px (sát lề) */
 .label-state {
   margin-left: 0px;
 }
 
-/* Zip: margin-left 2px */
 .label-zip {
   margin-left: 2px;
 }
@@ -117,7 +112,6 @@ form {
   flex-shrink: 0;
 }
 
-/* ----- INPUT TEXT & SELECT ----- */
 .input-col input[type="text"],
 .input-col select {
   width: 150px;
@@ -128,6 +122,7 @@ form {
   font-family: inherit;
   font-size: 16px;
 }
+
 .input-col.name-col input[type="text"] {
   width: 120px;
 }
@@ -152,11 +147,11 @@ form {
   width: 130px;
   height: 28px;
 }
+
 .input-col.date-col input[type="text"] {
   width: 170px;
 }
 
-/* ----- TEXTAREA ----- */
 .textarea-col textarea {
   width: 390px;
   padding: 4px;
@@ -166,7 +161,6 @@ form {
   resize: none;
 }
 
-/* ===== RADIO & CHECKBOX ===== */
 .radio-grid,
 .checkbox-grid {
   display: grid;
@@ -183,13 +177,12 @@ form {
   cursor: pointer;
 }
 
-/* Radio: mặc định viền xám nhạt */
 .radio-grid input[type="radio"] {
   appearance: none;
   -webkit-appearance: none;
   width: 18px;
   height: 18px;
-  border: 1px solid #aaa; /* Viền xám nhạt khi CHƯA chọn */
+  border: 1px solid #aaa;
   border-radius: 50%;
   background-color: #fff;
   display: inline-flex;
@@ -202,21 +195,19 @@ form {
   box-sizing: border-box;
 }
 
-/* Chỉ khi ĐƯỢC CHỌN: viền xanh dày + chấm xanh */
 .radio-grid input[type="radio"]:checked {
-  border: 3px solid #2e8b2e; /* Viền xanh dày khi được chọn */
+  border: 3px solid #2e8b2e;
 }
 
 .radio-grid input[type="radio"]:checked::after {
   content: "";
   width: 8px;
   height: 8px;
-  background-color: #2e8b2e; /* Chấm xanh ở tâm */
+  background-color: #2e8b2e;
   border-radius: 50%;
   display: block;
 }
 
-/* Checkbox */
 .checkbox-grid input[type="checkbox"] {
   appearance: none;
   -webkit-appearance: none;
@@ -248,31 +239,24 @@ form {
   margin-bottom: 2px;
   display: block;
 }
-/* ===== ĐƯỜNG KẺ NGANG ===== */
+
 .divider {
   border: none;
   border-top: 2px solid #000;
   margin: 18px 0;
 }
 
-/* ===== NÚT BẤM ===== */
 .button-row {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 35px;
   margin-top: 20px;
 }
 
 .button-row button {
   font-family: inherit;
-  font-size: 16px;
-  padding: 5px 18px;
-  background-color: #e0e0e0;
-  border: 2px outset #ccc;
+  font-size: 15px;
+  padding: 6px 15px;
   cursor: pointer;
   border-radius: 4px;
-}
-
-.button-row button:active {
-  border-style: inset;
 }
